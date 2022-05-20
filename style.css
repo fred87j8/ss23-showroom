@@ -186,7 +186,6 @@ margin-bottom: -100px !important;
     transition: all .3s ease-in-out;
     cursor: pointer;
     filter: saturate(115%);
-
 }
 
 .yogaflue:hover {
@@ -286,9 +285,7 @@ margin-bottom: -100px !important;
         width: 34vw;
         transform: rotate(-2deg);
     }
-
 }
-
 
 /* LOOKBOOK PAGE*/
 ._df_book {
@@ -312,8 +309,40 @@ margin-top: 50px !important;
 /* COLLECTION */
 .woostify-sorting {
     display: none;
-
 }
+
+#main > header > div > div > ul {
+    float: left;
+    list-style: none;
+    justify-self: center;
+    display: flex;
+    text-align: center;
+    text-decoration: none !important;
+}
+
+.wc-block-product-categories-list-item {
+    padding: 0 18px 0 0px;
+}
+
+
+/* #main > header > div > div.wp-block-woocommerce-product-categories.wc-block-product-categories.alignwide.is-list > ul > li {
+    float: left;
+    list-style: none;
+    justify-self: center;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none !important;
+} */
+/* 
+#main > header > div > div.wp-block-woocommerce-product-categories.wc-block-product-categories.alignwide.is-list > ul {
+    margin-left: 9vw;
+} */
+
+/* .wp-block-woocommerce-product-categories.wc-block-product-categories.alignwide.is-list > ul > li::marker {
+    display: none !important;
+} */
+
 
 /* SINGLE VIEW */
 
@@ -321,3 +350,9 @@ margin-top: 50px !important;
     font-size: 2.5rem;
     text-transform: uppercase;
 }
+
+.easyzoom-flyout:hover {
+    background-color: #f1f6fe;
+}
+
+                  
