@@ -1,0 +1,323 @@
+/*
+Theme Name: Woostify Child
+Theme URI: https://woostify.com
+Template: woostify
+Author: Woostify
+Author URI: https://woostify.com/about
+Description: Woostify is fast, lightweight, responsive and super flexible WooCommerce theme built with SEO, speed, and usability in mind. The theme works great with any of your favorite page builder likes Elementor, Beaver Builder, SiteOrigin, Thrive Architect, Divi, etc. Therefore, you can build any type of websites like shop, business agencies, corporate, portfolio, education, university portal, consulting, church, restaurant, medical and so on. Woostify is compatible with all well-coded plugins, including major ones like WooCommerce, OrbitFox, Yoast, BuddyPress, bbPress, etc. Learn more about the theme and ready to import demo sites at https://woostify.com
+Tags: e-commerce,two-columns,left-sidebar,right-sidebar,custom-background,custom-colors,custom-header,custom-menu,featured-images,full-width-template,threaded-comments,rtl-language-support,footer-widgets,sticky-post,theme-options
+Version: 2.1.1.1652182960
+Updated: 2022-05-10 11:42:40
+Developed for Helmstedt Showroom SS23
+
+*/
+
+@font-face { 
+    font-family: WindsorD; 
+    src: url(http://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/themes/woostify-child/fonts/windsor/windsord-webfont.woff2); 
+    font-weight: normal; 
+}
+
+@font-face { 
+    font-family: EddieOT; 
+    src: url(http://frederikkekaysen.com/helmstedt/showroomfw22/wordpress/wp-content/themes/woostify-child/fonts/EddieOT-Regular.otf); 
+    font-weight: normal; 
+}
+
+h1 {
+    font-family: "EddieOT" !important;
+    font-weight: 400 !important;
+    color: #90C558 !important;
+    margin-top: -20px;
+    font-size: 2rem;
+}
+
+h2, h3, h4 {
+    font-family: "WindsorD" !important;
+    font-weight: 300 !important;
+}
+
+p {
+    font-family: "WindsorD";
+    color: #484848;
+}
+
+/* MENU */
+
+.menu-item-text {
+    font-family: "WindsorD" !important;
+}
+
+.primary-navigation > li > a {
+    font-family: "WindsorD" !important;
+    font-weight: 500 !important;
+}
+
+.site-header-inner {
+    border-bottom: 0px solid #CDD8E6;
+}
+
+/* .has-header-transparent.header-transparent-for-all-devices .site-header {
+    position: relative;
+} */
+
+#view {
+    height: 100vh;
+}
+
+/* FOOTER */
+.site-infor-col {
+    font-family: "WindsorD" !important;
+    font-size: 1rem;
+}
+
+/* FRONT PAGE - placering af figurer + hoveranimationer */
+
+.frontpage-background {
+margin-top: -50px !important;
+margin-bottom: -100px !important;
+}
+
+.frontpage-logo {
+    position: absolute;
+    top: 3vw;
+    left: 1.8vw;
+    width: 50vw;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.frontpage-logo:hover {
+    transform: scale(1.03);
+    transform-origin: center;
+    cursor: pointer;
+}
+
+.roots {
+    position: absolute;
+    top: 10.5vw;
+    left: 3.4vw;
+    width: 20vw;
+    transform: rotate(-2deg);
+}
+
+.towel-contact {
+    position: absolute;
+    position: absolute;
+    top: 23.8vw;
+    left: 15.3vw;
+    width: 10vw;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    filter: saturate(115%);
+    /* margin-top: 25px; */
+}
+
+.towel-contact:hover {
+    transform: scale(1.1);
+    transform-origin: top left;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0px 2px 2px #f1f6fe);
+    filter: drop-shadow(0px 2px 2px #f1f6fe);
+}
+
+.jordbaerhus {
+    position: absolute;
+    top: 1.6vw;
+    right: 11.1vw;
+    width: 35.7vw;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    filter: saturate(110%);
+}
+
+.jordbaerhus:hover {
+    transform: scale(1.04);
+    transform-origin: bottom center;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(2px 3px 3px #f1f6fe);
+    filter: drop-shadow(2px 3px 3px #f1f6fe);
+}
+
+.pr-svamp {
+    position: absolute;
+    top: 37.8vw;
+    left: 28.5vw;
+    width: 9vw;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    z-index: 100;
+    filter: saturate(110%);
+}
+
+.pr-svamp:hover {
+    transform: scale(1.11);
+    transform-origin: bottom center;
+    /* transform: rotate(3deg); */
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0px 2px 2px #f1f6fe);
+    filter: drop-shadow(0px 2px 2px #f1f6fe);
+}
+
+.barnevogn {
+    position: absolute;
+    top: 25.1vw;
+    left: 29.5vw;
+    width: 15.4vw;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+    filter: saturate(115%);
+}
+
+.barnevogn:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+    transform-origin: 60% 20%;
+    -webkit-filter: drop-shadow(0px 1px 1px #f1f6fe);
+    filter: drop-shadow(0px 1px 1px #f1f6fe);
+}
+
+.yogaflue {
+    position: absolute;
+    top: 38.7vw;
+    left: 47vw;
+    width: 21vw;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    filter: saturate(115%);
+
+}
+
+.yogaflue:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transform-origin: bottom 20%;
+    -webkit-filter: drop-shadow(0px 2px 2px #f1f6fe);
+    filter: drop-shadow(0px 2px 2px #f1f6fe);
+}
+
+@media screen and (min-width: 1000px) {
+    .baggrund-mobil {
+        display: none;
+    }
+
+    .frontpage-menu-buttons-mobile {
+        display: none !important;
+    }
+
+    .mobil-menu-forside {
+        display: none;
+    }
+}
+
+
+
+/* FORSIDE MOBIL */
+
+@media screen and (max-width: 1000px) {
+
+    .pr-svamp, .yogaflue, .jordbaerhus, .frontpage-background, .barnevogn, .towel-contact  {
+        display: none;
+    }
+
+    .baggrund-mobil {
+        margin-top: -50px !important;
+        margin-bottom: -100px !important;
+    }
+
+    .baggrund-mobil, .wp-block-image.alignfull img, .wp-block-image.alignwide img {
+        overflow: hidden;
+        width: auto;
+        height: 100vh !important;
+        width: 100vw !important;
+        object-fit: cover;
+    }
+
+    .frontpage-menu-buttons-mobile {
+        position: relative;
+        top: -64vh;
+        height: 50%;
+    }
+
+    .mobil-menu-forside {
+        font-family: WindsorD;
+        font-size: 1.4rem;
+        -webkit-filter: drop-shadow(0px 2px 2px #cccccc);
+        filter: drop-shadow(0px 2px 2px #cccccc);
+    }
+
+    .content-area #post-43 {
+        height: 89vh !important;
+    }
+
+    .frontpage-logo {
+        position: absolute;
+        top: 3.5vw;
+        left: 1.8vw;
+        width: 50vw;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .roots {
+        position: absolute;
+        top: 11.5vw;
+        left: 3.4vw;
+        width: 20vw;
+        transform: rotate(-2deg);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .frontpage-logo {
+        position: absolute;
+        top: 6vw;
+        left: 1.8vw;
+        width: 85vw;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .roots {
+        position: absolute;
+        top: 18.5vw;
+        left: 3.4vw;
+        width: 34vw;
+        transform: rotate(-2deg);
+    }
+
+}
+
+
+/* LOOKBOOK PAGE*/
+._df_book {
+    margin-top: -50px;
+}
+
+.df-book-wrapper {
+margin-top: 50px !important;
+}
+
+.df-ui-btn {
+    color: #90C558 !important;
+}
+
+@media screen and (max-width: 700px) {
+    ._df_book {    
+        height: 580px !important;
+    }
+}
+
+/* COLLECTION */
+.woostify-sorting {
+    display: none;
+
+}
+
+/* SINGLE VIEW */
+
+.product_title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
