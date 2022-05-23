@@ -71,6 +71,10 @@ p {
     font-size: 1rem;
 }
 
+.site-footer {
+    height: 80px;
+}
+
 /* FRONT PAGE - placering af figurer + hoveranimationer */
 
 .frontpage-background {
@@ -210,8 +214,6 @@ margin-bottom: -100px !important;
     }
 }
 
-
-
 /* FORSIDE MOBIL */
 
 @media screen and (max-width: 1000px) {
@@ -235,8 +237,8 @@ margin-bottom: -100px !important;
 
     .frontpage-menu-buttons-mobile {
         position: relative;
-        top: -64vh;
-        height: 50%;
+        top: -65vh;
+        height: 70%;
     }
 
     .mobil-menu-forside {
@@ -325,25 +327,6 @@ margin-top: 50px !important;
 }
 
 
-/* #main > header > div > div.wp-block-woocommerce-product-categories.wc-block-product-categories.alignwide.is-list > ul > li {
-    float: left;
-    list-style: none;
-    justify-self: center;
-    display: block;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none !important;
-} */
-/* 
-#main > header > div > div.wp-block-woocommerce-product-categories.wc-block-product-categories.alignwide.is-list > ul {
-    margin-left: 9vw;
-} */
-
-/* .wp-block-woocommerce-product-categories.wc-block-product-categories.alignwide.is-list > ul > li::marker {
-    display: none !important;
-} */
-
-
 /* SINGLE VIEW */
 
 .product_title {
@@ -355,4 +338,244 @@ margin-top: 50px !important;
     background-color: #f1f6fe;
 }
 
-                  
+
+/* SAVED STYLES / WHISHLIST */
+
+/* #yith-wcwl-form {
+    margin: 0 5vw 0 5vw;
+} */
+
+.show-title-form {
+    display: none;
+}
+
+.yith-wcwl-share-title {
+    visibility: hidden;
+}
+
+.yith-wcwl-share-title:after {
+    content: 'Copy the link below to share your list' !important;
+    visibility: visible;
+    font-size: 1.5rem;
+}
+
+.yith-wcwl-share h4.yith-wcwl-share-title {
+    margin-left: -50px;
+}
+
+.copy-trigger {
+    content: "hej";
+}
+
+#yith-wcwl-form > div.yith_wcwl_wishlist_footer > div > div > small {
+    display: none;
+}
+
+#yith_wcwl_share_url {
+    width: 550px;
+    background-color: transparent !important;
+    border: 0px;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1000px) {
+  
+    #yith-wcwl-form {
+        margin: 0 5vw 0 5vw;
+    }
+    
+    
+    #yith-wcwl-form > div.yith_wcwl_wishlist_footer {
+        padding: 0 0 0 0 !important;
+    }
+
+    tr {
+        margin-top: -30px;
+        padding-bottom: 60px;
+    }
+
+   td {
+        height: 130px;
+    }
+
+  .product-thumbnail {
+      justify-content: left !important;
+      margin-top: 15px;
+
+    }
+
+    .wishlist_table tr td.product-thumbnail a {
+        display: block;
+        border: none;
+        max-width: 80px;
+        margin-top: 90px;
+        margin-left: 10px;
+    }
+
+    #yith-wcwl-form > div.yith_wcwl_wishlist_footer > div {
+        margin-top: 50px;
+    }
+}
+
+/* CONTACT */
+
+.forminator-module-260 {
+    font-family: WindsorD !important;
+}
+
+.forminator-row {
+    font-family: WindsorD !important;
+}
+
+.forminator-button {
+    font-family: WindsorD !important;
+    font-size: 1.4rem !important;
+    -webkit-filter: drop-shadow(0px 2px 2px #cccccc);
+    filter: drop-shadow(0px 2px 2px #cccccc);
+}
+
+#forminator-module-260.forminator-design--material .forminator-input--wrap:after {
+    background-color: #90C558 !important;
+}
+
+#forminator-module-260.forminator-design--material .forminator-is_active .forminator-label[class*="forminator-floating-"] {
+    color: #90C558 !important;
+}
+
+#forminator-module-260.forminator-design--material .forminator-textarea--wrap:after {
+    border-color: #90C558 !important;
+}
+
+.aakande {
+	-webkit-animation: wobble-hor-bottom 2.5s linear infinite;
+	        animation: wobble-hor-bottom 2.5s linear infinite;
+}
+
+ @-webkit-keyframes wobble-hor-bottom {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    25% {
+        -webkit-transform: rotate(-5deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    75% {
+        -webkit-transform: rotate(5deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes wobble-hor-bottom {    
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+       transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+
+    }
+}
+
+/* PR */
+figcaption a {
+    font-family: WindsorD !important;
+    font-size: 1.4rem !important;
+}
+
+.pr-bille-rod-gul img:hover {
+    transform: scale(1.06) rotate(-4deg);
+    transform-origin: bottom;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0px 2px 2px #cccccc);
+    filter: drop-shadow(0px 2px 2px #cccccc);
+}
+
+.pr-natsvaermer figcaption {
+    margin-top: 70px;
+}
+
+.pr-natsvaermer img:hover {
+    transform: scale(1.07) rotate(4deg);
+    /* transform: rotate(20deg); */
+    transform-origin: bottom;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0px 2px 2px #cccccc);
+    filter: drop-shadow(0px 2px 2px #cccccc);
+}
+
+.pr-bille-pink-gron figcaption{
+    margin-top: 50px;
+}
+
+.pr-bille-pink-gron img:hover {
+    transform: scale(1.06) rotate(-4deg);
+    transform-origin: bottom;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0px 2px 2px #cccccc);
+    filter: drop-shadow(0px 2px 2px #cccccc);
+}
+
+
+.no-sidebar:not(.site-boxed-container) .alignwide {
+    margin: 0 0 180px 0;
+}
+
+
+/* PRESS RELEASE */
+
+.pressrelease {
+    -webkit-filter: drop-shadow(0px 2px 2px #cccccc);
+    filter: drop-shadow(0px 2px 2px #cccccc);
+}
+
+.press-download-button .wp-block-file__button {
+    border-radius: 0;
+    font-family: WindsorD !important;
+    font-size: 1.4rem !important;
+    text-transform: uppercase;
+    background-color: #f1f6fe;
+    padding: 8px 25px 8px 25px;
+    color: #3D4F9B;
+    -webkit-filter: drop-shadow(0px 2px 2px #cccccc);
+    filter: drop-shadow(0px 2px 2px #cccccc);
+}
+
+.press-download-button {
+    margin-top: 30px !important;
+
+}
+
+.press-download-button .wp-block-file__button:hover {
+    color: #3D4F9B !important;
+    background-color: #CDD8E6;
+}
+
+.press-download-button .wp-block-file__button:focus {
+    color: #3D4F9B !important;
+    background-color: #CDD8E6;
+}
+
+
+
+
