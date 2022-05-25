@@ -24,6 +24,28 @@ Developed for Helmstedt Showroom SS23
     font-weight: normal; 
 }
 
+/* body {
+    background-image: url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/uploads/2022/05/gradient-1.png') ;
+    height: 2000px;
+    background-image: repeating-linear-gradient(blue, green) !important;
+    background-repeat: repeat;
+    background-attachment:scroll !important;
+    background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, red 85%);
+    background: linear-gradient(55deg, #0fb8ad, #1fc8db, red);
+} */
+
+body {
+    background-image: url("https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/uploads/2022/05/gradient-1.png") !important;
+    background-size: cover;
+    /* background-repeat: repeat; */
+    /* background-attachment: fixed; */
+}
+
+#view {
+    height: auto !important;
+}
+
+
 h1 {
     font-family: "EddieOT" !important;
     font-weight: 400 !important;
@@ -32,14 +54,38 @@ h1 {
     font-size: 2rem;
 }
 
-h2, h3, h4 {
+h2 {
     font-family: "WindsorD" !important;
     font-weight: 300 !important;
+    color: #2D3C79 !important;
+}
+
+h3 {
+    font-family: "EddieOT" !important;
+    font-weight: 400 !important;
+    color: #90C558 !important;
+    font-size: 2.8rem !important;
+}
+
+h4 {
+    font-family: "WindsorD" !important;
+    font-weight: 300 !important;
+}
+
+h5 {
+    font-family: "WindsorD" !important;
+    font-weight: 300 !important;
+    font-size: 1.5rem !important;
+    line-height: 1.5rem !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px;
+    color: rgba(61,79,155,1);
 }
 
 p {
     font-family: "WindsorD";
     color: #484848;
+    font-size: 1.15rem;
 }
 
 /* MENU */
@@ -289,6 +335,70 @@ margin-bottom: -100px !important;
     }
 }
 
+/* ATELIER */
+.atelier-welcome {
+    font-size: 7.2vw;
+    line-height: 7.2vw;
+}
+
+.spinning-plate {
+    -webkit-animation: spin-plate 12s linear infinite;
+    -moz-animation: spin-plate 12s linear infinite;
+    animation: spin-plate 12s linear infinite;
+}
+
+@keyframes spin-plate { 
+    100% { 
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);
+    } 
+}
+
+h2.the-history-headline {
+    font-size: 3rem !important;
+    color: #2D3C79 !important;
+}
+
+.history-content {
+    max-width: 1000px !important;
+}
+
+#post-18 > div:nth-child(4) > div > div {
+    display: flex;
+    justify-content: center;
+}
+
+#post-19 > div:nth-child(4) > div > div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px !important;   
+}
+
+.atelier-helmstedthouse {
+    max-width: 500px;
+}
+
+.atelier-where-it-started {
+    max-width: 500px;
+}
+
+.atelier-emilie-helmstedt {
+    max-width: 500px;
+}
+
+.atelier-emilieportrait {
+    max-width: 450px;
+}
+
+.create-section {
+    max-width: 500px;
+}
+
+.wp-container-15, .wp-container-17 {
+    justify-content: center !important;
+}
+
 /* LOOKBOOK PAGE*/
 ._df_book {
     margin-top: -50px;
@@ -430,7 +540,7 @@ margin-top: 50px !important;
 
 .forminator-button {
     font-family: WindsorD !important;
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
     -webkit-filter: drop-shadow(0px 2px 2px #cccccc);
     filter: drop-shadow(0px 2px 2px #cccccc);
 }
@@ -502,11 +612,15 @@ figcaption a {
     font-family: WindsorD !important;
     font-size: 1.4rem !important;
 }
+.pr-bille-rod-gul img {
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
 
 .pr-bille-rod-gul img:hover {
     transform: scale(1.06) rotate(-4deg);
     transform-origin: bottom;
-    cursor: pointer;
+    cursor: pointer !important;
     -webkit-filter: drop-shadow(0px 2px 2px #cccccc);
     filter: drop-shadow(0px 2px 2px #cccccc);
 }
@@ -515,11 +629,16 @@ figcaption a {
     margin-top: 70px;
 }
 
+.pr-natsvaermer img {
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
 .pr-natsvaermer img:hover {
-    transform: scale(1.07) rotate(4deg);
+    transform: scale(1.1) rotate(7deg);
     /* transform: rotate(20deg); */
     transform-origin: bottom;
-    cursor: pointer;
+    cursor: pointer !important;
     -webkit-filter: drop-shadow(0px 2px 2px #cccccc);
     filter: drop-shadow(0px 2px 2px #cccccc);
 }
@@ -528,10 +647,16 @@ figcaption a {
     margin-top: 50px;
 }
 
-.pr-bille-pink-gron img:hover {
-    transform: scale(1.06) rotate(-4deg);
-    transform-origin: bottom;
+.pr-bille-pink-gron img {
+    transition: all .4s ease-in-out;
     cursor: pointer;
+
+}
+
+.pr-bille-pink-gron img:hover {
+    transform: scale(1.08) rotate(-5deg);
+    transform-origin: bottom;
+    cursor: pointer !important;
     -webkit-filter: drop-shadow(0px 2px 2px #cccccc);
     filter: drop-shadow(0px 2px 2px #cccccc);
 }
@@ -552,7 +677,7 @@ figcaption a {
 .press-download-button .wp-block-file__button {
     border-radius: 0;
     font-family: WindsorD !important;
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
     text-transform: uppercase;
     background-color: #f1f6fe;
     padding: 8px 25px 8px 25px;
@@ -576,6 +701,34 @@ figcaption a {
     background-color: #CDD8E6;
 }
 
+/* HISTORICAL RUNWAYS */
 
+#sample_slider > div.owl-dots > button span {
+    background-color: #CED6C2 !important;
+}
 
+#sample_slider > div.owl-dots > button.owl-dot.active span {
+    background-color: #90C558 !important;
+}
+
+#sample_slider > div.owl-nav > button.owl-next {
+    background-color: rgba(206,214,194,0.8) !important;
+}
+
+#sample_slider > div.owl-nav > button.owl-prev {
+    background-color: rgba(206,214,194,0.8) !important;
+}
+
+.owl-carousel .owl-stage-outer {
+    overflow: visible !important;
+}
+
+#sample_slider > div.owl-dots {
+    bottom: -38px !important;
+}
+
+/* 
+#sample_slider > div.white > div.sa_owl_theme > div.owl-nav > button.owl-next {
+    background: url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/uploads/2022/05/Åkande.png') no-repeat center center !important;
+} */
 
