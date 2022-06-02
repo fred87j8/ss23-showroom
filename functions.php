@@ -17,7 +17,7 @@ add_filter( 'locale_stylesheet_uri', 'chld_thm_cfg_locale_css' );
 // FJERNE LAZYLOAD FOR AT KUNNE SUPPORTE FORSIDEN
 add_filter( 'wp_lazy_loading_enabled', '__return_false' );
 
-// WISHLIST NON RESPONSIVE
+// REMOVE INITIAL RESPONSIVENESS FROM WISHLIST
 add_filter( 'yith_wcwl_is_wishlist_responsive', '__return_false' );
 
 

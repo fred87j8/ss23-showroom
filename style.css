@@ -12,52 +12,62 @@ Developed for Helmstedt Showroom SS23
 
 */
 
-@font-face { 
-    font-family: WindsorD; 
-    src: url(http://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/themes/woostify-child/fonts/windsor/windsord-webfont.woff2); 
-    font-weight: normal; 
+/* CUSTOM FONTS */
+
+@font-face {
+    font-family: 'WindsorD';
+    src: url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/themes/woostify-child/fonts/windsor/WindsorD-Regu.eot');
+    src: url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/themes/woostify-child/fonts/windsor/WindsorD-Regu.eot?#iefix') format('embedded-opentype'),
+        url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/themes/woostify-child/fonts/windsor/WindsorD-Regu.woff2') format('woff2'),
+        url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/themes/woostify-child/fonts/windsor/WindsorD-Regu.woff') format('woff'),
+        url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/themes/woostify-child/fonts/windsor/WindsorD-Regu.ttf') format('truetype'),
+        url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/themes/woostify-child/fonts/windsor/WindsorD-Regu.svg#WindsorD-Regu') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
 }
 
-@font-face { 
-    font-family: EddieOT; 
-    src: url(http://frederikkekaysen.com/helmstedt/showroomfw22/wordpress/wp-content/themes/woostify-child/fonts/EddieOT-Regular.otf); 
-    font-weight: normal; 
+@font-face {
+    font-family: 'EddieOT';
+    src: url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/themes/woostify-child/fonts/eddieot/EddieOT-Regular.eot');
+    src: url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/themes/woostify-child/fonts/eddieot/EddieOT-Regulareot?#iefix') format('embedded-opentype'),
+        url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/themes/woostify-child/fonts/eddieot/EddieOT-Regular.woff2') format('woff2'),
+        url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/themes/woostify-child/fonts/eddieot/EddieOT-Regular.woff') format('woff'),
+        url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/themes/woostify-child/fonts/eddieot/EddieOT-Regular.ttf') format('truetype'),
+        url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/themes/woostify-child/fonts/eddieot/EddieOT-Regular.svg#EddieOT-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
 }
 
-/* body {
-    background-image: url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/uploads/2022/05/gradient-1.png') ;
-    height: 2000px;
-    background-image: repeating-linear-gradient(blue, green) !important;
-    background-repeat: repeat;
-    background-attachment:scroll !important;
-    background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, red 85%);
-    background: linear-gradient(55deg, #0fb8ad, #1fc8db, red);
-} */
+/* CUSTOM GRADIENT BACKGROUND */
 
 body {
-    background-image: url("https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/uploads/2022/05/gradient-1.png") !important;
+    /* background-image: url("https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/uploads/2022/05/gradient-1.png") !important; */
+    background-image: url("https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/uploads/2022/05/gradient-scaled.webp") !important;
     background-size: cover;
-    /* background-repeat: repeat; */
-    /* background-attachment: fixed; */
 }
 
 #view {
     height: auto !important;
 }
 
+/* TYPOGRAPHY */
 
 h1 {
     font-family: "EddieOT" !important;
-    font-weight: 400 !important;
+    font-weight: 300 !important;
     color: #90C558 !important;
     margin-top: -20px;
     font-size: 2rem;
+    line-height: 3.5rem !important;
 }
 
 h2 {
     font-family: "WindsorD" !important;
-    font-weight: 300 !important;
+    font-weight: 200 !important;
     color: #2D3C79 !important;
+    line-height: 3rem !important;
 }
 
 h3 {
@@ -65,6 +75,7 @@ h3 {
     font-weight: 400 !important;
     color: #90C558 !important;
     font-size: 2.8rem !important;
+    line-height: 2.8rem !important;
 }
 
 h4 {
@@ -121,7 +132,7 @@ p {
     height: 80px;
 }
 
-/* FRONT PAGE - placering af figurer + hoveranimationer */
+/* FRONT PAGE - placering af baggrund og figurer samt animationer */
 
 .frontpage-background {
 margin-top: -50px !important;
@@ -160,7 +171,6 @@ margin-bottom: -100px !important;
     transition: all .3s ease-in-out;
     cursor: pointer;
     filter: saturate(115%);
-    /* margin-top: 25px; */
 }
 
 .towel-contact:hover {
@@ -295,7 +305,7 @@ margin-bottom: -100px !important;
     }
 
     .content-area #post-43 {
-        height: 89vh !important;
+        height: 100vh !important;
     }
 
     .frontpage-logo {
@@ -337,22 +347,42 @@ margin-bottom: -100px !important;
 
 /* ATELIER */
 .atelier-welcome {
-    font-size: 7.2vw;
-    line-height: 7.2vw;
+    font-size: 6.8rem;
+    line-height: 7rem !important;
+}
+
+.dotmenu {
+    position: absolute;
+    height: 50px !important;
+    margin-left: 20px;
+}
+
+.dotmenuitems {
+    font-size: 23px;
+    margin: 28px 0 0 50px;
+    color: #2D3C79;
+    line-height: 41px;
+}
+
+.dotmenuitems a:hover {
+    color: #59A650;
 }
 
 .spinning-plate {
-    -webkit-animation: spin-plate 12s linear infinite;
-    -moz-animation: spin-plate 12s linear infinite;
-    animation: spin-plate 12s linear infinite;
+    -webkit-animation: spin-plate 14s linear infinite;
+    animation: spin-plate 14s linear infinite;
 }
 
 @keyframes spin-plate { 
     100% { 
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    transform:rotate(360deg);
+        transform:rotate(360deg);
     } 
+}
+
+@-webkit-keyframes spin-plate {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 h2.the-history-headline {
@@ -392,12 +422,39 @@ h2.the-history-headline {
 }
 
 .create-section {
-    max-width: 500px;
+    max-width: 525px;
 }
 
-.wp-container-15, .wp-container-17 {
+.wp-container-15, .wp-container-16, .wp-container-17, .wp-container-19 {
     justify-content: center !important;
 }
+
+.color-gif {
+    margin: -40px 0 0 -20px;
+}
+
+@media screen and (max-width: 980px) {
+    .atelier-welcome {
+        font-size: 5.3rem;
+        line-height: 5.3rem !important;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    .atelier-welcome {
+        font-size: 3.8rem;
+        line-height: 3.8rem !important;
+    }
+
+    .dotmenuitems {
+        font-size: 20px;
+        margin: 28px 0 0 50px;
+        color: #2D3C79;
+        line-height: 40.6px;
+    }
+}
+
 
 /* LOOKBOOK PAGE*/
 ._df_book {
@@ -448,12 +505,39 @@ margin-top: 50px !important;
     background-color: #f1f6fe;
 }
 
+.woocommerce-tabs .tabs {
+    text-align: left;
+}
+
+.woocommerce-tabs .tabs li {
+    margin: 0;
+}
+
+.woocommerce-tabs .tabs li a {
+    border: none !important;
+}
+
+div.product-page-container > div > div.product-summary > div > p > del {
+    text-decoration: none !important;
+    color: #333333;
+}
+
+div.product-page-container > div > div.product-summary > div > p > ins > span {
+    color: #868686;
+}
+
+@media screen and (max-width: 780px) {
+    .woocommerce-tabs .tabs li {
+        margin: -19px;
+    }
+
+    #tab-description {
+        padding: 8px 0;
+    }
+}
+
 
 /* SAVED STYLES / WHISHLIST */
-
-/* #yith-wcwl-form {
-    margin: 0 5vw 0 5vw;
-} */
 
 .show-title-form {
     display: none;
@@ -473,9 +557,9 @@ margin-top: 50px !important;
     margin-left: -50px;
 }
 
-.copy-trigger {
+/* .copy-trigger {
     content: "hej";
-}
+} */
 
 #yith-wcwl-form > div.yith_wcwl_wishlist_footer > div > div > small {
     display: none;
@@ -495,7 +579,6 @@ margin-top: 50px !important;
         margin: 0 5vw 0 5vw;
     }
     
-    
     #yith-wcwl-form > div.yith_wcwl_wishlist_footer {
         padding: 0 0 0 0 !important;
     }
@@ -512,7 +595,6 @@ margin-top: 50px !important;
   .product-thumbnail {
       justify-content: left !important;
       margin-top: 15px;
-
     }
 
     .wishlist_table tr td.product-thumbnail a {
@@ -558,11 +640,11 @@ margin-top: 50px !important;
 }
 
 .aakande {
-	-webkit-animation: wobble-hor-bottom 2.5s linear infinite;
-	        animation: wobble-hor-bottom 2.5s linear infinite;
+	-webkit-animation: slight-turning 2.5s linear infinite;
+	        animation: slight-turning 2.5s linear infinite;
 }
 
- @-webkit-keyframes wobble-hor-bottom {
+ @-webkit-keyframes slight-turning {
     0% {
         -webkit-transform: rotate(0deg);
     }
@@ -584,7 +666,7 @@ margin-top: 50px !important;
     }
 }
 
-@keyframes wobble-hor-bottom {    
+@keyframes slight-turning {    
     0% {
         transform: rotate(0deg);
     }
@@ -603,11 +685,14 @@ margin-top: 50px !important;
 
     100% {
         transform: rotate(0deg);
-
     }
 }
 
-/* PR */
+/* PRESS MENU PAGE */
+#post-36 > div {
+    margin-bottom: 250px;
+}
+
 figcaption a {
     font-family: WindsorD !important;
     font-size: 1.4rem !important;
@@ -650,7 +735,6 @@ figcaption a {
 .pr-bille-pink-gron img {
     transition: all .4s ease-in-out;
     cursor: pointer;
-
 }
 
 .pr-bille-pink-gron img:hover {
@@ -660,7 +744,6 @@ figcaption a {
     -webkit-filter: drop-shadow(0px 2px 2px #cccccc);
     filter: drop-shadow(0px 2px 2px #cccccc);
 }
-
 
 .no-sidebar:not(.site-boxed-container) .alignwide {
     margin: 0 0 180px 0;
@@ -727,8 +810,47 @@ figcaption a {
     bottom: -38px !important;
 }
 
-/* 
-#sample_slider > div.white > div.sa_owl_theme > div.owl-nav > button.owl-next {
-    background: url('https://frederikkekaysen.com/kea/12_helmstedt_exam/wordpress3/wp-content/uploads/2022/05/Åkande.png') no-repeat center center !important;
-} */
+/* COOKIE POLICY */
 
+#cmplz-cookiebanner-container {
+    width: 300px;
+}
+
+.cmplz-cookiebanner .cmplz-header {
+    grid-template-columns: 38px 1fr 80px !important;
+    padding-top: 15px;
+}
+
+.cmplz-manage-consent {
+    font-family: "WindsorD" !important;
+}
+
+.cmplz-message {
+    font-family: "WindsorD" !important;
+    font-size: 1rem !important;
+}
+
+.cmplz-title {
+    font-family: "EddieOT" !important;
+    font-size: 2rem !important;
+}
+
+.cmplz-btn {
+    font-family: "WindsorD" !important;
+    padding: 5px !important;
+    height: 38px !important;
+    width: 150px !important;
+}
+
+.cmplz-buttons {
+    padding: 5px !important;
+}
+
+/* ASSETS */
+.reel {
+    width: 400px;
+}
+
+.instagram-ad {
+    width: 550px;
+}
